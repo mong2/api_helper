@@ -1,10 +1,5 @@
-import sys
-import os
-import re
 import json
-import time
 import ConfigParser
-import dateutil.parser
 from api import Api
 from oauth import APIToken
 
@@ -24,13 +19,13 @@ class Test:
 		token = oauth.get_token(key_id, secret_key)
 
 		self.api = Api(token)
-		self.directory = os.getcwd()
 		return None
 
 	def test_get(self):
 		resp = self.api.get("v1/servers")
 		if not resp.raise_for_status():
 			data = resp.json()
+			print data
 		return None
 
 	def test_post(self):
@@ -63,9 +58,15 @@ class Test:
 		resp.raise_for_status()
 		return None
 
+# Ask the script to run
 if __name__ == "__main__":
+	# setup the initial requirements, including API Token
 	initial = Test()
+
+	#example on how to call the test_get function
 	initial.test_get()
-	initial.test_post()
-	initial.test_put()
-	initial.test_delete()
+
+	# More examples:
+	# initial.test_post()
+	# initial.test_put()
+	# initial.test_delete()
