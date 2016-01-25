@@ -1,4 +1,4 @@
-import json
+	import json
 import ConfigParser
 from api import Api
 from oauth import APIToken
@@ -8,6 +8,7 @@ from oauth import APIToken
 class Test:
 	def __init__(self):
 		config = ConfigParser.ConfigParser()
+		# Replace config.conf with your own auth_file name
 		config.read('config.conf')
 
 		key_id = config.get('client','key_id')
