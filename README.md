@@ -24,16 +24,16 @@ These functions can deal with both v1 and v2 endpoints. Simply add the version n
 2. Post Request Example: 
     * api_endpoint: v1/policies, v2/policies
     * update body:
-        ```
+       ```
         body = {
             "policy": {
                 "name": "test_policy"
             }
         }
-         ```
-        ```python
+      ```
+      ```python
         self.api.post(api_endpoint, body)
-        ```
+      ```
 3. Put Request Example: 
     * api_endpoint: v1/policies/{policy_id}, v2/policies/{policy_id}
     * update body:
