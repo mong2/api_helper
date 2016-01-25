@@ -39,6 +39,7 @@ These functions can deal with both v1 and v2 endpoints. Simply add the version n
 3. Put Request Example: 
     * api_endpoint: v1/policies/{policy_id}, v2/policies/{policy_id}
     * update body:
+    
         ```
         body = {
             "policy": {
@@ -51,6 +52,7 @@ These functions can deal with both v1 and v2 endpoints. Simply add the version n
         ```
 4. Delete Request Example: 
     * api_endpoint: v1/policies/{policy_id}, v2/policies/{policy_id}
+    
         ```python
         self.api.delete(api_endpoint)
         ```
