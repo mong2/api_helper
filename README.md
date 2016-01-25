@@ -11,8 +11,9 @@ More on test.py - How to make API calls:
 
 1. Get Request: 
 ..* this function can deal with both v1 and v2 endpoints. Simply the version number in api_endpoint.
-...* ex: v1/servers, v2/issues
+..* ex: v1/servers, v2/issues
 ```python
 self.api.get(api_endpoint)
 ```
+
 Note:
