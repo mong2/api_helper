@@ -18,9 +18,9 @@ These functions can deal with both v1 and v2 endpoints. Simply add the version n
 
 1. Get Request Example: 
     * api_endpoint: v1/servers, v2/issues
-        ```python
+      ```python
         self.api.get(api_endpoint)
-        ```
+      ```
 2. Post Request Example: 
     * api_endpoint: v1/policies, v2/policies
     * update body:
