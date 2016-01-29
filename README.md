@@ -56,7 +56,9 @@ These functions can deal with both v1 and v2 endpoints. Simply add the version n
         ```python
         self.api.delete(api_endpoint)
         ```
+
 ----
+
 **Setting up get.py**
 
 1. ```
