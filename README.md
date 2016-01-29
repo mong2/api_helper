@@ -61,7 +61,8 @@ These functions can deal with both v1 and v2 endpoints. Simply add the version n
 
 **Setting up get.py**
 
-1. ```
+1. 
+   ```
     vim ~/.bash_profile
     
     alias get='python ~/{where you store api_helper}/get.py'
