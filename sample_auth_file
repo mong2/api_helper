@@ -1,4 +1,11 @@
-[client]
+[api_key_pair]
 api_hostname = https://api.cloudpassage.com
 key_id =
 secret_key =
+
+[api_username_passwd]
+portal = https://portal.cloudpassage.com
+admin_username = 
+admin_passwd =
+auditor_username =
+auditor_passwd =

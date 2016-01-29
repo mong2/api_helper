@@ -1,4 +1,3 @@
-	import json
 import ConfigParser
 from api import Api
 from oauth import APIToken
@@ -11,10 +10,10 @@ class Test:
 		# Replace config.conf with your own auth_file name
 		config.read('config.conf')
 
-		key_id = config.get('client','key_id')
-		secret_key = config.get('client', 'secret_key')
+		key_id = config.get('api_key_pair','key_id')
+		secret_key = config.get('api_key_pair', 'secret_key')
 
-		api_hostname = config.get('client', 'api_hostname')
+		api_hostname = config.get('api_key_pair', 'api_hostname')
 
 		oauth = APIToken(api_hostname)
 		token = oauth.get_token(key_id, secret_key)
@@ -55,8 +54,8 @@ class Test:
 		return None
 
 	def test_delete(self):
-		resp = self.api.delete("v1/policies/15be2cbec3a511e5a01759521d1a9f69")
-		resp.raise_for_status()
+		self.api.delete("v1/policies/15be2cbec3a511e5a01759521d1a9f69")
+		# resp.raise_for_status()
 		return None
 
 # Ask the script to run
