@@ -61,7 +61,7 @@ These functions can deal with both v1 and v2 endpoints. Simply add the version n
 
 **Setting up get.py**
 
-1. 
+1. Set up your ~/.bash_profile
    ```
     vim ~/.bash_profile
     
