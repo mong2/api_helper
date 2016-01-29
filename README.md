@@ -56,4 +56,21 @@ These functions can deal with both v1 and v2 endpoints. Simply add the version n
         ```python
         self.api.delete(api_endpoint)
         ```
+----
+**Setting up get.py**
+
+1. ```
+    vim ~/.bash_profile
+    
+    alias get='python ~/{where you store api_helper}/get.py'
+    #save and quit#
+    source ~/.bash_profile
+    ```
+2. open get.py
+    ```
+    config.read(os.path.abspath('./api_helper/config.conf'))
+    #make sure the above path is where you store your api_helper#
+    ```
+3. go to one directory above /api_helper and type in **get {endpoint}** in the terminal. This should return all the API output of that endpoint. 
+
 
